@@ -1,0 +1,89 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variáveis de cores */
+:root {
+  --cor-primaria: #2d6a4f;
+  --cor-secundaria: #74c69d;
+  --fundo: #f0fff4;
+  --texto: #1b4332;
+  --texto-escuro: #142f2e;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--fundo);
+  color: var(--texto-escuro);
+  line-height: 1.6;
+}
+
+/* Cabeçalho + Navegação */
+header {
+  padding: 2rem;
+  text-align: center;
+}
+
+nav {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+nav button {
+  background: var(--cor-primaria);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  text-decoration: underline;
+}
+
+/* Imagem principal */
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+/* Seções */
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+section + section {
+  border-top: 1px solid var(--cor-secundaria);
+}
+
+/* Footer */
+footer {
+  background-color: var(--cor-primaria);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
